@@ -1,0 +1,97 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1b2838; /* Fondo oscuro como Steam */
+    color: #c7d5e0; /* Texto gris claro */
+}
+
+/* Header */
+header {
+    text-align: center;
+    background-color: #171a21; /* Encabezado oscuro */
+    padding: 20px 0;
+    border-bottom: 3px solid #4a76a8;
+}
+
+header h1 {
+    color: #66c0f4; /* Azul claro estilo Steam */
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Diseño responsivo */
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+/* Tarjetas de anime */
+.anime {
+    background-color: #2a475e; /* Fondo azul oscuro */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra estilo 3D */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime:hover {
+    transform: scale(1.05); /* Efecto de zoom */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.8); /* Sombra más intensa */
+}
+
+/* Imagen del anime */
+.anime img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-bottom: 2px solid #66c0f4; /* Línea decorativa */
+}
+
+/* Título del anime */
+.anime h3 {
+    font-size: 18px;
+    color: #c7d5e0; /* Texto gris claro */
+    margin: 15px 10px;
+    text-align: center;
+}
+
+/* Botones de paginación */
+.paginacion {
+    position: fixed; /* Fija los botones al fondo de la ventana */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #171a21; /* Fondo igual al header para consistencia */
+    padding: 10px 0;
+    border-top: 2px solid #4a76a8; /* Línea decorativa */
+}
+
+button {
+    background-color: #171a21;
+    color: #66c0f4;
+    border: 2px solid #66c0f4;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66c0f4;
+    color: #171a21;
+}
